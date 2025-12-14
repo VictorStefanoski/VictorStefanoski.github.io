@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects · Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-left">Victor Stefanoski</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">Projects</h1>
+      <p style="color:#9ca3af; font-size:0.9rem; margin-bottom:1rem;">
+        A selection of engineering projects. I am happy to share full reports, CAD, or code on request.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <h2 class="project-title">English Wheel Force Controller</h2>
+          <p class="project-meta">Lab project · Controls, DAQ, LabVIEW, Arduino</p>
+          <p class="project-desc">
+            Built a closed-loop force control system for an English wheel forming rig.
+            Integrated a load cell, signal conditioning, and a motor drive controlled via LabVIEW.
+          </p>
+          <ul style="font-size:0.9rem; margin-left:1rem; margin-bottom:0.6rem;">
+            <li>Modeled system dynamics and selected controller structure.</li>
+            <li>Tuned PID gains to minimize overshoot and settling time.</li>
+            <li>Validated performance against manual forming and reference forces.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">PID</span>
+            <span class="tag">LabVIEW</span>
+            <span class="tag">Embedded</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <h2 class="project-title">FSAE Electric Race Car Systems</h2>
+          <p class="project-meta">Gaucho Racing FSAE · Suspension & chassis</p>
+          <p class="project-desc">
+            Contributed to the design and analysis of suspension components for an electric race car,
+            targeting stiffness, weight, and packaging constraints.
+          </p>
+          <ul style="font-size:0.9rem; margin-left:1rem; margin-bottom:0.6rem;">
+            <li>Designed parts such as control arms, pushrods, or brackets in CAD.</li>
+            <li>Ran FEA to check strength and fatigue margins for track loads.</li>
+            <li>Coordinated with manufacturing constraints and rules compliance.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">FSAE</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">ANSYS</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <h2 class="project-title">3-Omega Thermal Measurement System</h2>
+          <p class="project-meta">Research lab · Thermal, instrumentation</p>
+          <p class="project-desc">
+            Supported development of a 3-omega experimental setup to measure thermal properties of materials,
+            integrating instrumentation, control, and data analysis.
+          </p>
+          <ul style="font-size:0.9rem; margin-left:1rem; margin-bottom:0.6rem;">
+            <li>Helped configure function generators, lock-in amplifiers, and sensors.</li>
+            <li>Wrote scripts for data acquisition and post-processing.</li>
+            <li>Compared measured conductivities against analytical models.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Thermal</span>
+            <span class="tag">Experiment</span>
+            <span class="tag">Python / MATLAB</span>
+          </div>
+        </article>
+
+        <!-- Add more project cards here as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
