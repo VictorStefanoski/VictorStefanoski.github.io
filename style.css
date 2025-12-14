@@ -1,0 +1,173 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* dark slate */
+  color: #e5e7eb;           /* light gray */
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #1f2937;
+  background-color: #020617;
+}
+
+.navbar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Hero section */
+.hero {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid #334155;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #38bdf8, #22c55e);
+  border: none;
+  color: #020617;
+  font-weight: 600;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* Sections */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+/* Project cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.2rem;
+}
+
+.project-card {
+  border-radius: 0.9rem;
+  border: 1px solid #1f2937;
+  padding: 1rem 1.1rem;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.6rem;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  color: #9ca3af;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #1f2937;
+  padding: 1.5rem 1rem 0;
+  color: #6b7280;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
