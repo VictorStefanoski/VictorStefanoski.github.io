@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact · Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-left">Your Name</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">Contact</h1>
+      <p style="font-size:0.95rem; margin-bottom:0.8rem;">
+        The best way to reach me is by email. I am also active on LinkedIn and GitHub.
+      </p>
+
+      <ul style="font-size:0.95rem; margin-left:1rem;">
+        <li>Email: <a href="mailto:youremail@example.com" style="color:#38bdf8;">youremail@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-handle" style="color:#38bdf8;">linkedin.com/in/your-handle</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" style="color:#38bdf8;">github.com/yourusername</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
