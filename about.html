@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About · Engineering Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-left">Victor Stefanoski</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">About</h1>
+      <p style="margin-bottom:1rem; color:#d1d5db;">
+        Short intro about you. For example:
+      </p>
+      <p style="margin-bottom:1.2rem; font-size:0.95rem;">
+        I am a mechanical engineering student focused on control systems, mechatronics,
+        and thermal design. I enjoy building hardware, writing code to control it,
+        and validating designs with experiments and analysis.
+      </p>
+
+      <h2 class="section-title" style="font-size:1.1rem;">Skills</h2>
+      <ul style="font-size:0.95rem; margin-left:1rem; margin-bottom:1.5rem;">
+        <li>CAD: SolidWorks, fusion of CAD + FEA workflows</li>
+        <li>Analysis: MATLAB, Python, control systems, basic signal processing</li>
+        <li>Tools: LabVIEW, Arduino, DAQ, oscilloscopes, basic instrumentation</li>
+        <li>Thermal: Intro thermal modeling, electronics cooling concepts</li>
+      </ul>
+
+      <h2 class="section-title" style="font-size:1.1rem;">Resume</h2>
+      <p style="font-size:0.95rem;">
+        You can download my resume here:
+        <a href="resume.pdf" style="color:#38bdf8;">resume.pdf</a>
+        (place a PDF file named <code>resume.pdf</code> in this repository).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
